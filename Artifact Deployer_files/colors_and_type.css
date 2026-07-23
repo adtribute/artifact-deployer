@@ -1,0 +1,245 @@
+/* ============================================================
+   Rippit Design System — Colors & Type
+   Single source of truth. Import this in any HTML artifact.
+   ============================================================ */
+
+/* ---------- Fonts ----------
+   Real brand fonts: Fraktion Sans (display), Söhne (body).
+   These are SUBSTITUTIONS until real font files are supplied.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ============ COLOR PRIMITIVES ============ */
+
+  /* Tree Frog Green — the brand */
+  --rippit-green-50:  #EAFBEF;
+  --rippit-green-100: #CDF4D7;
+  --rippit-green-200: #9CE8AF;
+  --rippit-green-300: #6BD989;
+  --rippit-green-400: #43C868;
+  --rippit-green-500: #22B14C;   /* PRIMARY */
+  --rippit-green-600: #1A8E3D;
+  --rippit-green-700: #166C30;
+  --rippit-green-800: #104E24;
+  --rippit-green-900: #0E3B1F;   /* "Deep Jungle" — our near-black */
+
+  /* Cream Paper — default surface */
+  --rippit-cream-50:  #FAF6EC;
+  --rippit-cream-100: #F2ECDA;
+  --rippit-cream-200: #E6DDC0;
+
+  /* Mist — green-tinted neutral for hover/subtle surfaces */
+  --rippit-mist-50:  #F5F8F4;
+  --rippit-mist-100: #EEF3EC;
+  --rippit-mist-200: #DDE7DA;
+  --rippit-mist-300: #BFCFBC;
+  --rippit-mist-400: #94A892;
+  --rippit-mist-500: #6B8069;
+  --rippit-mist-600: #4C5F4A;
+  --rippit-mist-700: #364533;
+
+  /* Coral Eye — the accent, used sparingly */
+  --rippit-coral-100: #FFE3DE;
+  --rippit-coral-300: #FF9A8E;
+  --rippit-coral-500: #FF5E4D;   /* ACCENT */
+  --rippit-coral-700: #C43A2D;
+
+  /* Lilypad — highlight / selection / "new" */
+  --rippit-lime-100: #F2FBD6;
+  --rippit-lime-300: #C9F26C;
+  --rippit-lime-500: #9BD431;
+
+  /* Semantic hues (use sparingly — prefer brand) */
+  --rippit-amber-500: #E8A33A;
+  --rippit-blue-500:  #3A7CE8;   /* reserved for link icon in source citations */
+
+  /* ============ SEMANTIC TOKENS ============ */
+
+  /* Foreground */
+  --fg-1: var(--rippit-green-900);        /* primary text */
+  --fg-2: var(--rippit-mist-700);         /* secondary text */
+  --fg-3: var(--rippit-mist-500);         /* tertiary / metadata */
+  --fg-disabled: var(--rippit-mist-400);
+  --fg-on-brand: #FFFFFF;                 /* text on green-500+ */
+  --fg-on-jungle: var(--rippit-cream-50); /* text on green-900 */
+  --fg-accent: var(--rippit-coral-500);
+  --fg-link: var(--rippit-green-700);
+
+  /* Background */
+  --bg-page: var(--rippit-cream-50);
+  --bg-surface: #FFFFFF;
+  --bg-surface-2: var(--rippit-mist-50);
+  --bg-inverse: var(--rippit-green-900);
+  --bg-brand: var(--rippit-green-500);
+  --bg-brand-soft: var(--rippit-green-100);
+  --bg-accent-soft: var(--rippit-coral-100);
+  --bg-selection: var(--rippit-lime-300);
+  --bg-hover: var(--rippit-mist-100);
+  --bg-pressed: var(--rippit-mist-200);
+
+  /* Border */
+  --border-subtle: rgba(14, 59, 31, 0.08);
+  --border-default: rgba(14, 59, 31, 0.14);
+  --border-strong: rgba(14, 59, 31, 0.24);
+  --border-brand: var(--rippit-green-500);
+  --border-focus: var(--rippit-green-500);
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 2px var(--rippit-green-500), 0 0 0 6px rgba(34, 177, 76, 0.2);
+
+  /* ============ TYPOGRAPHY ============ */
+
+  --font-display: 'Fraktion Sans', 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Söhne', 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', ui-serif, Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Type scale (desktop). Pairs with line-heights below. */
+  --fs-display-xl: 88px;   --lh-display-xl: 0.95;  --ls-display-xl: -0.035em;
+  --fs-display-lg: 64px;   --lh-display-lg: 1.0;   --ls-display-lg: -0.03em;
+  --fs-display-md: 48px;   --lh-display-md: 1.05;  --ls-display-md: -0.025em;
+  --fs-display-sm: 36px;   --lh-display-sm: 1.1;   --ls-display-sm: -0.02em;
+  --fs-h1: 32px;           --lh-h1: 1.15;          --ls-h1: -0.015em;
+  --fs-h2: 24px;           --lh-h2: 1.2;           --ls-h2: -0.01em;
+  --fs-h3: 20px;           --lh-h3: 1.3;           --ls-h3: -0.005em;
+  --fs-body-lg: 18px;      --lh-body-lg: 1.55;
+  --fs-body:    16px;      --lh-body:    1.55;
+  --fs-body-sm: 14px;      --lh-body-sm: 1.5;
+  --fs-caption: 12px;      --lh-caption: 1.4;
+  --fs-eyebrow: 12px;      --ls-eyebrow: 0.08em;
+
+  /* ============ SPACING ============ */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* ============ RADII ============ */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+
+  /* ============ SHADOWS (jungle-tinted) ============ */
+  --shadow-sm: 0 1px 2px rgba(14,59,31,0.06), 0 1px 3px rgba(14,59,31,0.04);
+  --shadow-md: 0 2px 4px rgba(14,59,31,0.06), 0 8px 16px rgba(14,59,31,0.06);
+  --shadow-lg: 0 4px 8px rgba(14,59,31,0.08), 0 24px 48px rgba(14,59,31,0.08);
+  --shadow-xl: 0 8px 16px rgba(14,59,31,0.10), 0 40px 80px rgba(14,59,31,0.10);
+  --shadow-glow: 0 0 0 4px rgba(34,177,76,0.18);
+  --shadow-glow-coral: 0 0 0 4px rgba(255,94,77,0.18);
+
+  /* ============ MOTION ============ */
+  --ease-frog: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-out: cubic-bezier(0.4, 0, 1, 1);
+  --dur-micro: 120ms;
+  --dur-std: 240ms;
+  --dur-hero: 480ms;
+}
+
+/* ============ SEMANTIC ELEMENT DEFAULTS ============
+   Apply by setting `.rippit` (or on <body>) to opt in.
+*/
+
+.rippit,
+body.rippit {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg-1);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.rippit h1, .rippit .h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: var(--ls-h1);
+  color: var(--fg-1);
+  margin: 0;
+}
+.rippit h2, .rippit .h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--ls-h2);
+  color: var(--fg-1);
+  margin: 0;
+}
+.rippit h3, .rippit .h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  color: var(--fg-1);
+  margin: 0;
+}
+
+.rippit .display-xl { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-display-xl); line-height: var(--lh-display-xl); letter-spacing: var(--ls-display-xl); }
+.rippit .display-lg { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-display-lg); line-height: var(--lh-display-lg); letter-spacing: var(--ls-display-lg); }
+.rippit .display-md { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-display-md); line-height: var(--lh-display-md); letter-spacing: var(--ls-display-md); }
+.rippit .display-sm { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-display-sm); line-height: var(--lh-display-sm); letter-spacing: var(--ls-display-sm); }
+
+.rippit p { margin: 0 0 var(--space-4); font-size: var(--fs-body); line-height: var(--lh-body); color: var(--fg-1); }
+.rippit p.lead { font-size: var(--fs-body-lg); line-height: var(--lh-body-lg); color: var(--fg-2); }
+.rippit small, .rippit .caption { font-size: var(--fs-caption); line-height: var(--lh-caption); color: var(--fg-3); }
+
+.rippit .eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--fg-2);
+}
+
+.rippit .quote, .rippit blockquote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--fg-1);
+  margin: 0;
+}
+
+.rippit code, .rippit .mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--bg-surface-2);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  color: var(--fg-1);
+}
+
+.rippit a {
+  color: var(--fg-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color var(--dur-micro) var(--ease-frog),
+              text-decoration-thickness var(--dur-micro) var(--ease-frog);
+}
+.rippit a:hover {
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--rippit-lime-300);
+}
+
+.rippit ::selection { background: var(--bg-selection); color: var(--fg-1); }
+
+/* Focus */
+.rippit :focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-sm);
+}

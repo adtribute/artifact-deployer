@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://artifact-deployer.pages.dev/#2048/ -->
+<html lang="en" class="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artifact Deployer</title>
+<script src="./Artifact Deployer_files/saved_resource"></script>
+<script src="./Artifact Deployer_files/jszip.min.js"></script>
+<style>
+  ::-webkit-scrollbar{height:6px;width:6px}
+  ::-webkit-scrollbar-thumb{background:#3f3f46;border-radius:3px}
+</style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-4{bottom:1rem}.left-1\/2{left:50%}.z-10{z-index:10}.z-50{z-index:50}.my-1{margin-top:0.25rem;margin-bottom:0.25rem}.mt-1{margin-top:0.25rem}.flex{display:flex}.hidden{display:none}.h-2\.5{height:0.625rem}.h-full{height:100%}.h-screen{height:100vh}.h-16{height:4rem}.h-5{height:1.25rem}.w-2\.5{width:0.625rem}.w-full{width:100%}.w-16{width:4rem}.w-5{width:1.25rem}.max-w-\[160px\]{max-width:160px}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-1\.5{gap:0.375rem}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.rounded-full{border-radius:9999px}.rounded-md{border-radius:0.375rem}.rounded-2xl{border-radius:1rem}.rounded-lg{border-radius:0.5rem}.rounded{border-radius:0.25rem}.border{border-width:1px}.border-0{border-width:0px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-dashed{border-style:dashed}.border-zinc-700{--tw-border-opacity:1;border-color:rgb(63 63 70 / var(--tw-border-opacity, 1))}.border-zinc-800{--tw-border-opacity:1;border-color:rgb(39 39 42 / var(--tw-border-opacity, 1))}.border-indigo-500{--tw-border-opacity:1;border-color:rgb(99 102 241 / var(--tw-border-opacity, 1))}.bg-indigo-500{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.bg-zinc-900\/60{background-color:rgb(24 24 27 / 0.6)}.bg-zinc-950{--tw-bg-opacity:1;background-color:rgb(9 9 11 / var(--tw-bg-opacity, 1))}.bg-indigo-500\/10{background-color:rgb(99 102 241 / 0.1)}.bg-zinc-800{--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity, 1))}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.pl-1{padding-left:0.25rem}.pl-2{padding-left:0.5rem}.pr-3{padding-right:0.75rem}.pt-2{padding-top:0.5rem}.pl-3{padding-left:0.75rem}.pr-1\.5{padding-right:0.375rem}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.tracking-tight{letter-spacing:-0.025em}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-zinc-100{--tw-text-opacity:1;color:rgb(244 244 245 / var(--tw-text-opacity, 1))}.text-zinc-300{--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.text-zinc-400{--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.text-indigo-300{--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.text-zinc-200{--tw-text-opacity:1;color:rgb(228 228 231 / var(--tw-text-opacity, 1))}.text-zinc-500{--tw-text-opacity:1;color:rgb(113 113 122 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.shadow-\[0_0_8px_2px\]{--tw-shadow:0 0 8px 2px;--tw-shadow-colored:0 0 8px 2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-indigo-500\/50{--tw-shadow-color:rgb(99 102 241 / 0.5);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:border-indigo-500:hover{--tw-border-opacity:1;border-color:rgb(99 102 241 / var(--tw-border-opacity, 1))}.hover\:bg-indigo-500:hover{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.hover\:bg-zinc-700:hover{--tw-bg-opacity:1;background-color:rgb(63 63 70 / var(--tw-bg-opacity, 1))}.hover\:text-indigo-400:hover{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:opacity-40:disabled{opacity:0.4}</style></head>
+<body class="bg-zinc-950 text-zinc-100 h-screen flex flex-col overflow-hidden font-sans antialiased">
+
+<header class="flex items-stretch gap-1 px-2 pt-2 bg-zinc-900/60 border-b border-zinc-800 select-none">
+  <div class="flex items-center gap-2 pr-3 pl-1">
+    <div class="w-2.5 h-2.5 rounded-full bg-indigo-500 shadow-[0_0_8px_2px] shadow-indigo-500/50"></div>
+    <span class="text-sm font-semibold tracking-tight text-zinc-300">Deployer</span>
+  </div>
+
+  <nav id="tabs" class="flex items-end gap-1 flex-1 overflow-x-auto"><div class="group flex items-center gap-1.5 pl-3 pr-1.5 my-1 rounded-md text-sm cursor-pointer whitespace-nowrap transition-colors bg-zinc-800 text-white"><span class="py-1.5 truncate max-w-[160px]">2048</span>
+      <button class="w-5 h-5 rounded flex items-center justify-center text-zinc-500 hover:text-white hover:bg-zinc-700 ">×</button></div></nav>
+
+  <button id="newTab" class="my-1 shrink-0 px-3 py-1.5 rounded-md text-sm font-medium border border-dashed border-zinc-700 text-zinc-400 hover:border-indigo-500 hover:text-indigo-400 transition-colors">
+    + New Tab
+  </button>
+
+  <div class="flex items-center gap-1 pl-2">
+    <button id="copyLink" title="Copy shareable link" class="my-1 px-3 py-1.5 rounded-md text-sm font-medium bg-indigo-600 hover:bg-indigo-500 text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+      Copy Link
+    </button>
+  </div>
+</header>
+
+<main id="viewer" class="relative flex-1 bg-zinc-900">
+  <iframe id="frame" class="w-full h-full border-0 bg-white" sandbox="allow-scripts allow-same-origin allow-forms" src="./Artifact Deployer_files/saved_resource.html"></iframe>
+
+  <div id="empty" class="absolute inset-0 flex flex-col items-center justify-center gap-4 text-center px-6 hidden">
+    <div class="w-16 h-16 rounded-2xl bg-zinc-800 flex items-center justify-center text-3xl">📦</div>
+    <div>
+      <h1 class="text-xl font-semibold text-zinc-200">Drop an HTML file to deploy</h1>
+      <p class="text-sm text-zinc-500 mt-1">Drag a <code class="text-indigo-400">.html</code> file, a <em>folder</em>, or a <code class="text-indigo-400">.zip</code> anywhere — or paste raw HTML (⌘/Ctrl-V).</p>
+    </div>
+  </div>
+
+  <div id="overlay" class="absolute inset-0 hidden items-center justify-center bg-indigo-500/10 backdrop-blur-sm border-2 border-dashed border-indigo-500 z-10 pointer-events-none">
+    <span class="text-lg font-semibold text-indigo-300">Release to deploy</span>
+  </div>
+</main>
+
+<div id="toast" class="fixed bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg bg-zinc-800 text-sm text-zinc-100 shadow-lg opacity-0 pointer-events-none transition-opacity z-50"></div>
+
+<script>
+// ⬇️ paste your deployed Worker URL here (no trailing slash)
+const WORKER = 'https://artifact-store.mrdupes.workers.dev';
+
+const KEY = 'deployer.tabs.v1';
+
+let tabs = [];       // [{id, name, route, deploying}]  route = R2 path after WORKER; iframe → WORKER/route
+let active = null;
+
+const $ = s => document.querySelector(s);
+const tabsEl = $('#tabs'), frame = $('#frame'), empty = $('#empty'), overlay = $('#overlay');
+const uid = () => 't' + Math.random().toString(36).slice(2, 9);
+const slug = s => s.toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60);
+const junk = p => /(^|\/)\.DS_Store$/.test(p) || p.includes('__MACOSX');
+const encPath = p => p.split('/').map(encodeURIComponent).join('/');
+
+function toast(msg) {
+  const t = $('#toast');
+  t.textContent = msg; t.style.opacity = '1';
+  clearTimeout(t._h); t._h = setTimeout(() => t.style.opacity = '0', 1800);
+}
+
+function save() { localStorage.setItem(KEY, JSON.stringify({ tabs, active })); }
+function load() {
+  try { const s = JSON.parse(localStorage.getItem(KEY)); if (s?.tabs) { tabs = s.tabs; active = s.active; } } catch {}
+}
+
+// Which HTML is the entry? index.html > name match (wordle → RippitWordle) > sole html > ask.
+function pickEntry(files, name) {
+  const htmls = files.filter(f => /\.html?$/i.test(f.path));
+  if (!htmls.length) return null;
+  const idx = htmls.find(f => /(^|\/)index\.html?$/i.test(f.path));
+  if (idx) return idx.path;
+  if (htmls.length === 1) return htmls[0].path;
+  const s = slug(name);
+  const match = s && htmls.find(f => slug(f.path.split('/').pop()).includes(s));
+  if (match) return match.path;
+  const n = parseInt(prompt('Multiple HTML files — pick the entry:\n\n'
+    + htmls.map((f, i) => `${i + 1}. ${f.path}`).join('\n'), '1'), 10);
+  return (htmls[(n || 1) - 1] || htmls[0]).path;
+}
+
+// Upload every file under a key. files: [{path, blob}]. Returns on all-done.
+async function deploy(name, files) {
+  files = files.filter(f => !junk(f.path));
+  const entry = pickEntry(files, name);
+  if (!entry) return toast('No HTML file found');
+  const key = slug(name) || uid();
+  // clean route when a lone/index entry; explicit file when the folder has several htmls
+  const lone = files.filter(f => /\.html?$/i.test(f.path)).length === 1 || /(^|\/)index\.html?$/i.test(entry);
+  const route = lone ? key + '/' : key + '/' + entry;
+  const tab = { id: uid(), name, route: null, deploying: true };
+  tabs.push(tab); active = tab.id; save(); render();
+  toast(`Deploying ${files.length} file(s)…`);
+  try {
+    await Promise.all(files.map(async f => {
+      const r = await fetch(`${WORKER}/${key}/${encPath(f.path)}`, { method: 'POST', body: f.blob });
+      if (!r.ok) throw new Error(f.path);
+    }));
+    tab.route = route; tab.deploying = false; save(); render(); toast('Deployed');
+  } catch { tab.deploying = false; toast('Deploy failed'); }
+}
+
+function closeTab(id) {
+  const i = tabs.findIndex(t => t.id === id); if (i < 0) return;
+  tabs.splice(i, 1);
+  if (active === id) active = tabs.length ? tabs[Math.max(0, i - 1)].id : null;
+  save(); render();
+}
+
+function selectTab(id) { active = id; save(); render(); }
+
+function syncHash() {
+  const t = tabs.find(t => t.id === active);
+  const h = t?.route ? '#' + t.route : '';
+  if (location.hash !== h) history.replaceState(null, '', location.pathname + location.search + h);
+}
+
+function renderFrame() {
+  const t = tabs.find(t => t.id === active);
+  $('#copyLink').disabled = !t || !t.route;
+  if (!t) { frame.classList.add('hidden'); empty.classList.remove('hidden'); frame.removeAttribute('src'); return; }
+  empty.classList.add('hidden'); frame.classList.remove('hidden');
+  const url = t.route ? `${WORKER}/${encPath(t.route)}` : 'about:blank';
+  if (frame.src !== url) frame.src = url;
+}
+
+function renderTabs() {
+  tabsEl.innerHTML = '';
+  tabs.forEach(t => {
+    const on = t.id === active;
+    const el = document.createElement('div');
+    el.className = 'group flex items-center gap-1.5 pl-3 pr-1.5 my-1 rounded-md text-sm cursor-pointer whitespace-nowrap transition-colors '
+      + (on ? 'bg-zinc-800 text-white' : 'text-zinc-400 hover:bg-zinc-800/50');
+    el.innerHTML = `<span class="py-1.5 truncate max-w-[160px]"></span>
+      <button class="w-5 h-5 rounded flex items-center justify-center text-zinc-500 hover:text-white hover:bg-zinc-700 ${on ? '' : 'opacity-0 group-hover:opacity-100'}">×</button>`;
+    el.querySelector('span').textContent = t.name;
+    el.querySelector('span').ondblclick = () => rename(t);
+    el.onclick = e => { if (e.target.tagName !== 'BUTTON') selectTab(t.id); };
+    el.querySelector('button').onclick = e => { e.stopPropagation(); closeTab(t.id); };
+    tabsEl.appendChild(el);
+  });
+}
+
+function rename(t) {
+  const n = prompt('Rename tab', t.name);
+  if (n && n.trim()) { t.name = n.trim(); save(); renderTabs(); }
+}
+
+function render() { renderTabs(); renderFrame(); syncHash(); }
+
+function ingest(html, name) {
+  if (!html?.trim()) return toast('Nothing to deploy');
+  if (WORKER.startsWith('PASTE')) return toast('Set the Worker URL first');
+  const blob = new Blob([html], { type: 'text/html' });
+  deploy(name, [{ path: (slug(name) || 'index') + '.html', blob }]);
+}
+
+// Recursively read a webkitEntry into [{path, blob}] (path relative to `prefix`).
+async function collect(entry, prefix = '') {
+  if (entry.isFile) {
+    const file = await new Promise(r => entry.file(r));
+    return [{ path: prefix + entry.name, blob: file }];
+  }
+  const reader = entry.createReader();
+  const kids = [];
+  for (;;) { const b = await new Promise(r => reader.readEntries(r)); if (!b.length) break; kids.push(...b); }
+  const sub = await Promise.all(kids.map(k => collect(k, prefix + entry.name + '/')));
+  return sub.flat();
+}
+
+// If every path shares one top folder (e.g. GitHub/Claude zips), return "dir/".
+function commonTop(paths) {
+  if (!paths.length) return null;
+  const first = paths[0].split('/')[0] + '/';
+  return paths.every(p => p.startsWith(first)) && paths.some(p => p.length > first.length) ? first : null;
+}
+
+// Unzip in-browser → deploy contents. Strips a single wrapping folder if present.
+async function fromZip(file) {
+  toast('Unzipping…');
+  const zip = await JSZip.loadAsync(file);
+  const paths = Object.keys(zip.files).filter(p => !zip.files[p].dir && !junk(p));
+  if (!paths.length) return toast('Empty zip');
+  const top = commonTop(paths);
+  const files = await Promise.all(paths.map(async p => ({
+    path: top ? p.slice(top.length) : p,
+    blob: await zip.files[p].async('blob'),
+  })));
+  deploy((top ? top.replace(/\/$/, '') : file.name).replace(/\.zip$/i, ''), files);
+}
+
+// FileList from <input> — use webkitRelativePath, strip the top folder as the name.
+function fromInput(list) {
+  const files = [...list].filter(f => !junk(f.webkitRelativePath || f.name));
+  if (!files.length) return;
+  if (files.length === 1 && /\.zip$/i.test(files[0].name)) return fromZip(files[0]);
+  const rels = files.map(f => f.webkitRelativePath || f.name);
+  const top = rels[0].includes('/') ? rels[0].split('/')[0] : null;
+  const items = files.map((f, i) => ({ path: top ? rels[i].slice(top.length + 1) : rels[i], blob: f }));
+  deploy(top || files[0].name.replace(/\.html?$/i, ''), items);
+}
+
+let dragDepth = 0;
+window.addEventListener('dragenter', e => { e.preventDefault(); if (++dragDepth === 1) overlay.classList.replace('hidden', 'flex'); });
+window.addEventListener('dragover', e => e.preventDefault());
+window.addEventListener('dragleave', e => { e.preventDefault(); if (--dragDepth <= 0) { dragDepth = 0; overlay.classList.replace('flex', 'hidden'); } });
+window.addEventListener('drop', async e => {
+  e.preventDefault(); dragDepth = 0; overlay.classList.replace('flex', 'hidden');
+  const entries = [...(e.dataTransfer.items || [])].map(i => i.webkitGetAsEntry?.()).filter(Boolean);
+  if (entries.length) {
+    for (const en of entries) {
+      if (en.isDirectory) {
+        const files = await collect(en, ''); // paths incl. the folder name…
+        const strip = en.name + '/';
+        deploy(en.name, files.map(f => ({ path: f.path.startsWith(strip) ? f.path.slice(strip.length) : f.path, blob: f.blob })));
+      } else {
+        const file = await new Promise(r => en.file(r));
+        if (/\.zip$/i.test(file.name)) await fromZip(file);
+        else deploy(file.name.replace(/\.html?$/i, ''), [{ path: file.name, blob: file }]);
+      }
+    }
+    return;
+  }
+  const t = e.dataTransfer.getData('text'); if (t) ingest(t, 'pasted');
+});
+
+window.addEventListener('paste', e => {
+  if (['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName)) return;
+  const t = e.clipboardData.getData('text');
+  if (t && /<[a-z!]/i.test(t)) { e.preventDefault(); ingest(t, 'pasted'); }
+});
+
+$('#newTab').onclick = () => {
+  const inp = document.createElement('input');
+  inp.type = 'file'; inp.accept = '.zip,.html,.htm'; inp.multiple = true;
+  inp.onchange = () => fromInput(inp.files);
+  inp.click();
+};
+
+$('#copyLink').onclick = () => {
+  const t = tabs.find(t => t.id === active);
+  if (!t) return;
+  if (!t.route) return toast('Still uploading…');
+  navigator.clipboard.writeText(location.origin + location.pathname + '#' + t.route)
+    .then(() => toast('Link copied'), () => toast('Copy failed'));
+};
+
+// ── Boot ──
+// Capture shared key BEFORE render()/syncHash() clobbers the hash.
+const shared = decodeURIComponent(location.hash.slice(1));
+load();
+
+if (shared) {
+  let t = tabs.find(t => t.route === shared);
+  if (!t) { t = { id: uid(), name: shared.split('/')[0], route: shared }; tabs.push(t); }
+  active = t.id; save();
+}
+render();
+</script>
+
+
+</body></html>
